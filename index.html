@@ -107,6 +107,25 @@
                 vertical-align: middle;
                 filter: drop-shadow(rgba(0, 0, 0, 0.8) 1px 1px 2px);
             }
+            
+            .qr {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                filter: drop-shadow(0 0 2.5px #000);
+            }
+            
+            @media (max-width: 768px) {
+  .qr {
+    display: none;
+  }
+}
+            
+            .qrcode {
+                width: 175px;
+                border-radius: 20px;
+            }
+            
         </style>
     </head>
     <body>
@@ -135,5 +154,10 @@
                 <div><i>* If you see me on anywhere else it's either not me, or a dead account.</i></div>
             </nav>
         </main>
+        <div class="qr">
+    <img src="qr.svg" class="qrcode" alt="Scan to visit envenuslu.com">
+    <div><b>Scan on mobile!</b></div>
+</div>
+
     </body>
 </html>
